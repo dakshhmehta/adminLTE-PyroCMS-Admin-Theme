@@ -1,0 +1,64 @@
+<!doctype html>
+
+<html>
+
+<head>
+    {% include "theme::partials/metadata" %}
+</head>
+
+<body class="hold-transition skin-{{ preference_value('ri.theme.adminlte::skin', 'blue') }} sidebar-mini {{ locale().isRtl() ? ' rtl' }}">
+
+{#{% include "theme::partials/push" %}#}
+{#{% include "theme::partials/brand" %}#}
+{#{% include "theme::partials/navbar" %}#}
+{#{% include "theme::partials/header" %}#}
+
+<div class="wrapper">
+
+    {% include "theme::partials/topbar" %}
+    {% include "theme::partials/sidebar" %}
+
+    <!-- Content Wrapper. Contains page content -->
+  <div class="content-wrapper">
+    <!-- Content Header (Page header) -->
+    <section class="content-header">
+      <h1>
+        Dashboard
+        <small>Control panel</small>
+      </h1>
+
+      {{ breadcrumb() }}
+    </section>
+
+    <!-- Main content -->
+    <section class="content">
+
+      <!-- Default box -->
+      <div class="box">
+        <div class="box-body">
+            {% block content %}
+                
+            {% endblock %}
+        </div>
+        <!-- /.box-body -->
+        <div class="box-footer">
+          Footer
+        </div>
+        <!-- /.box-footer-->
+      </div>
+      <!-- /.box -->
+
+    </section>
+    <!-- /.content -->
+  </div>
+
+
+    {% include "theme::partials/footer" %}
+    {% include "theme::partials/modals" %}
+
+</div>
+
+{% include "theme::partials/assets" %}
+
+</body>
+</html>

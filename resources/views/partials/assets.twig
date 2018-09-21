@@ -1,0 +1,15 @@
+{{ asset_script("theme.js", ["live"]) }}
+
+<!-- Resolve conflict in jQuery UI tooltip with Bootstrap tooltip -->
+<script>
+  $.widget.bridge('uibutton', $.ui.button);
+</script>
+
+
+{% for style in asset_styles("styles.css") %}
+    {{ style|raw }}
+{% endfor %}
+
+{% for script in asset_scripts("scripts.js") %}
+    {{ script|raw }}
+{% endfor %}

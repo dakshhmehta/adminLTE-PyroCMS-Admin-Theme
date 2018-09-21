@@ -1,0 +1,17 @@
+<!-- /.content-wrapper -->
+<footer class="main-footer">
+	<div class="pull-right">
+		<select class="custom-select" onchange="window.location = '?_locale=' + this.value;">
+	        {% for iso in config('streams::locales.supported')|keys %}
+	            <option value="{{ iso }}" {{ config('app.locale') == iso ? 'selected' }}>
+	                {{ trans('streams::locale.' ~ iso ~ '.name') }} ({{ iso }})
+	            </option>
+	        {% endfor %}
+	    </select>
+	  <b>Version</b> {{ config('streams::distribution.version') }}
+	</div>
+	<strong>Copyright &copy; 2014-2016 <a href="https://adminlte.io">Almsaeed Studio</a>.</strong> All rights
+	reserved.
+	&nbsp;&nbsp;
+	<small>{{ request_time() }} <span>|</span> {{ memory_usage() }}</small>
+</footer>
