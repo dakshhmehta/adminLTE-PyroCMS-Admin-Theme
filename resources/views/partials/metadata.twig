@@ -81,37 +81,37 @@
 
 
 <!-- Morris.js charts -->
-{{ asset_add("theme.js", "ri.theme.adminlte::lte/bower_components/raphael/raphael.min.js") }}
-{{ asset_add("theme.js", "ri.theme.adminlte::lte/bower_components/morris.js/morris.min.js") }}
+{{ asset_add("lte.js", "ri.theme.adminlte::lte/bower_components/raphael/raphael.min.js") }}
+{{ asset_add("lte.js", "ri.theme.adminlte::lte/bower_components/morris.js/morris.min.js") }}
 
 <!-- Sparkline -->
-{{ asset_add("theme.js", "ri.theme.adminlte::lte/bower_components/jquery-sparkline/dist/jquery.sparkline.min.js") }}
+{{ asset_add("lte.js", "ri.theme.adminlte::lte/bower_components/jquery-sparkline/dist/jquery.sparkline.min.js") }}
 
 <!-- jvectormap -->
-{{ asset_add("theme.js", "ri.theme.adminlte::lte/plugins/jvectormap/jquery-jvectormap-1.2.2.min.js") }}
-{{ asset_add("theme.js", "ri.theme.adminlte::lte/plugins/jvectormap/jquery-jvectormap-world-mill-en.js") }}
+{{ asset_add("lte.js", "ri.theme.adminlte::lte/plugins/jvectormap/jquery-jvectormap-1.2.2.min.js") }}
+{{ asset_add("lte.js", "ri.theme.adminlte::lte/plugins/jvectormap/jquery-jvectormap-world-mill-en.js") }}
 
 <!-- jQuery Knob Chart -->
-{{ asset_add("theme.js", "ri.theme.adminlte::lte/bower_components/jquery-knob/dist/jquery.knob.min.js") }}
+{{ asset_add("lte.js", "ri.theme.adminlte::lte/bower_components/jquery-knob/dist/jquery.knob.min.js") }}
 
 <!-- daterangepicker -->
-{{ asset_add("theme.js", "ri.theme.adminlte::lte/bower_components/moment/min/moment.min.js") }}
-{{ asset_add("theme.js", "ri.theme.adminlte::lte/bower_components/bootstrap-daterangepicker/daterangepicker.js") }}
+{{ asset_add("lte.js", "ri.theme.adminlte::lte/bower_components/moment/min/moment.min.js") }}
+{{ asset_add("lte.js", "ri.theme.adminlte::lte/bower_components/bootstrap-daterangepicker/daterangepicker.js") }}
 
 <!-- datepicker -->
-{{ asset_add("theme.js", "ri.theme.adminlte::lte/bower_components/bootstrap-datepicker/dist/js/bootstrap-datepicker.min.js") }}
+{{ asset_add("lte.js", "ri.theme.adminlte::lte/bower_components/bootstrap-datepicker/dist/js/bootstrap-datepicker.min.js") }}
 
 <!-- Bootstrap WYSIHTML5 -->
-{{ asset_add("theme.js", "ri.theme.adminlte::lte/plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.all.min.js") }}
+{{ asset_add("lte.js", "ri.theme.adminlte::lte/plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.all.min.js") }}
 
 <!-- Slimscroll -->
-{{ asset_add("theme.js", "ri.theme.adminlte::lte/bower_components/jquery-slimscroll/jquery.slimscroll.min.js") }}
+{{ asset_add("lte.js", "ri.theme.adminlte::lte/bower_components/jquery-slimscroll/jquery.slimscroll.min.js") }}
 
 <!-- FastClick -->
-{{ asset_add("theme.js", "ri.theme.adminlte::lte/bower_components/fastclick/lib/fastclick.js") }}
+{{ asset_add("lte.js", "ri.theme.adminlte::lte/bower_components/fastclick/lib/fastclick.js") }}
 
 <!-- AdminLTE App -->
-{{ asset_add("theme.js", "ri.theme.adminlte::lte/dist/js/adminlte.min.js") }}
+{{ asset_add("lte.js", "ri.theme.adminlte::lte/dist/js/adminlte.min.js") }}
 
 
 {{ asset_style("theme.css", ["live"]) }}
@@ -123,6 +123,8 @@
 {% endif %}
 
 {{ constants() }}
+
+{{ asset_script("theme.js", ["live"]) }}
 
 <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
 <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
