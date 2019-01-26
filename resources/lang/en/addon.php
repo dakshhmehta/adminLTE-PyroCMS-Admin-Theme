@@ -1,7 +1,7 @@
 <?php
 
 return [
-    'title'       => 'Adminlte',
-    'name'        => 'Adminlte Theme',
+    'title'       => 'AdminLTE',
+    'name'        => 'AdminLTE Theme',
     'description' => ''
 ];
