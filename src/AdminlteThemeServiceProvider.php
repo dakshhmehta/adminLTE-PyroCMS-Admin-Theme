@@ -118,7 +118,7 @@ class AdminlteThemeServiceProvider extends AddonServiceProvider
      */
     protected $overrides = [
         //'streams::errors/404' => 'module::errors/404',
-        //'streams::errors/500' => 'module::errors/500',
+        'streams::form.form' => 'theme::streams/form/form',
     ];
 
     /**
